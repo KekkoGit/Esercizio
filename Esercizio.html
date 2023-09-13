@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	* {
+		background-color: #807863;
+		font-family: sans-serif;	
+		font-size: 10pt;
+	}
+	
+	h1, h2 {
+		color: white;
+		text-shadow: 5px 5px 7px black;
+	}
+
+	input {
+		color: black;
+		background-color: white;
+		border: 1px;
+		border-style: solid;
+		border-color: #807863;
+		margin-bottom: 5px;
+		display: inline-block;
+  		float: left;
+	}
+
+	label {
+    	display: inline-block;
+    	float: left;
+    	clear: left;
+    	width: 130px;
+    	text-align: left;
+		text-shadow: 10px 10px 12px black;
+	}
+
+	input[type=text], select {
+  		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		border-radius: 4px;
+  		box-sizing: border-box;
+	}
+
+	input[type=email], select {
+  		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		border-radius: 4px;
+  		box-sizing: border-box;
+	}
+
+	select {
+		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		border-radius: 4px;
+  		box-sizing: border-box;
+		color: black;
+		background-color: white;
+	}
+	
+	legend {
+		font-style: italic;
+		color:yellow;
+		font-family: Arial Black;
+		font-size: large;
+	}
+
+	img {
+		max-width: 30%;
+ 		height: auto;
+	}
+
+	.button {
+  		display: inline-block;
+  		border-radius: 4px;
+  		background-color: yellow;
+  		border: none;
+  		color: black;
+  		text-align: center;
+  		font-size: 28px;
+  		padding: 20px;
+  		width: 200px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5px;
+	}
+
+	.button span {
+  		cursor: pointer;
+  		display: inline-block;
+  		position: relative;
+  		transition: 0.5s;
+	}
+
+	.button span:after {
+  		content: '\00bb';
+  		position: absolute;
+  		opacity: 0;
+  		top: 0;
+  		right: -20px;
+  		transition: 0.5s;
+	}
+
+	.button:hover span {
+  		padding-right: 25px;
+	}
+
+	.button:hover span:after {
+  		opacity: 1;
+ 		right: 0;
+	}
+
+	
+</style>
+</head>
+<body>
+<img src="https://th.bing.com/th/id/R.4c97b270eb90c97c263020d47e425f6b?rik=2F46UyANe3LesA&riu=http%3a%2f%2ffonduaunoir.fr%2fwp-content%2fuploads%2f2016%2f03%2fQueen.jpg&ehk=rxxzdsP9NJ6PU%2ft47%2fJuVYUTQgRY8Gqz59joUB%2f%2fQ9Y%3d&risl=&pid=ImgRaw&r=0" alt="Immagine dei Queen" height="300px" weight="300px" class="Img">
+<h1> Titolo dell'album: Bohemian Rhapsody </h1><br>
+
+<form action="https:/test.com/esercizio.php" method="POST">
+	<fieldset>
+		<legend>DATI PRINCIPALI</legend><br>
+<div>
+	<label>Nome:</label><input type="text" name="nome" class="cas"><br>
+	<label>Cognome:</label><input type="text" name="nome" class="cas"><br>
+	<label>Indirizzo:</label><input type="text"name="indirizzo" class="cas"><br>
+	<label>Cap:</label><input type="text"name="cap" class="cas"><br>
+	<label>Citta':</label><input type="text"name="città" class="cas"><br>
+	<label>Email:</label><input type="email"name="email" class="cas"><br>
+	</fieldset><br><br>
+
+	<fieldset>
+		<legend>CARTA DI CREDITO</legend><br>
+			<label>Numero:</label><input type="text"name="n.carta" class="cas"><br>
+			<label>Circuito:</label><input type="text"name="circ.carta" class="cas"><br>
+			<label>Codice di sicurezza:</label><input type="text"name="sicur" class="cas"><br>
+		</legend>
+</div>
+
+	</fieldset><br><br>
+	
+	<fieldset>
+		<legend>BRANO & FORMATO</legend><br>
+		<label>Brano:</label>
+			<select name="brano">
+				<option value="1">20th Century Fox Fanfare</option>
+				<option value="2">Somebody to Love</option>
+				<option value="3">Doing All Right... Revisited</option>
+				<option value="4">Keep Yourself Alive</option>
+				<option value="5">Killer Queen</option>
+				<option value="6">Fat Bottomed Girls</option>
+				<option value="7">Bohemian Rhapsody</option>
+				<option value="8">Now I'm Here</option>
+				<option value="9">Crazy Little Thing Called Love</option>
+				<option value="10">Love of My Life</option>
+				<option value="11">We Will Rock You</option>
+				<option value="12">Another One Bites the Dust</option>
+				<option value="13">I Want to Break Free</option>
+				<option value="14">Under Pressure</option>
+				<option value="15">Who Wants to Live Forever</option>
+				<option value="16">Bohemian Rhapsody (Live Aid)</option>
+				<option value="17">Radio Ga Ga (Live Aid)</option>
+				<option value="18">Ay-Oh (Live Aid)</option>
+				<option value="19">Hammer to Fall (Live Aid)</option>
+				<option value="20">We Are the Champions (Live Aid)</option>
+				<option value="21">Don't Stop Me Now... Revisited</option>
+				<option value="22">The Show Must Go On</option>	
+			</select>
+
+			<label>Formato:</label>
+			<select name="formato">
+				<optgroup label="Musica Digitale">
+					<option value="1">MP3</option>
+					<option value="1">AAC</option>
+					<option value="1">WMA</option>
+					<option value="1">FLAC</option>
+					<option value="1">MIDI</option>
+				</optgroup>	
+					<option value="2">CD</option>
+					<option value="3">Digital Audio Tape</option>
+					<option value="4">Minidisc</option>
+					<option value="5">Musicassetta</option>
+					<option value="6">Stereo8</option>
+					<option value="7">Super Audio CD</option>
+			</select>
+	</fieldset><br><br><br>
+
+	<button class="button">Conferma</button>
+</form>
+</body>
+</html>
